@@ -1,24 +1,28 @@
 {
     "manifest_version": 2,
-        "name": "我的时钟",
-        "version": "1.0",
-        "description": "我的第一个Chrome扩展",
-        "icons": {
+    "name": "我的时钟",
+    "version": "1.0",
+    "description": "我的第一个Chrome扩展",
+    "icons": {
+        "16": "images/2.png"
+
+    },
+    "permissions":[
+        "tabs",
+        "downloads",
+        "background"
+    ],
+    "browser_action": {
+        "default_icon": {
             "16": "images/2.png"
 
         },
-        "browser_action": {
-            "default_icon": {
-                "16": "images/2.png"
-
-            },
-            "default_title": "我的时钟",
-            "default_popup": "popup.html"
-        },"content_scripts": [
-    {
-        "matches": ["http://*/","https://*/","http://*/*","https://*/*","http://www.jc88.net/*"],
+        "default_title": "我的时钟",
+        "default_popup": "popup.html"
+    },"content_scripts": [{
+        "run_at":"document_end",
+        "matches": ["<all_urls>"],
         "css":["css/switch.css"],
         "js": ["js/jquery.min.js",  "js/block.js", "js/replace.js", "js/switch.js"]
-    }
-]
+    }]
 }
