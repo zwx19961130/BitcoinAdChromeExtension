@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="css/switch.css">
+</head>
+<body>
+
+
+
+    <div class="info">
+        <table id="table">
+            <tr id="avatarUrl"></tr>
+            <tr>
+                <td>用户名:</td>
+                <td id="nickName"></td>
+            </tr>
+            <tr>
+                <td>余额:</td>
+                <td id="balance"></td>
+            </tr>
+
+            <tr>
+                <td id="gender"></td>
+                <td id="switch1">
+                    <div class="testswitch">
+                        <input class="testswitch-checkbox" id="onoffswitch1" type="checkbox">
+                        <label class="testswitch-label" for="onoffswitch1">
+                            <span class="testswitch-inner" data-on="ON" data-off="OFF"></span>
+                            <span class="testswitch-switch"></span>
+                        </label>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td id="province"></td>
+                <td id="switch2">
+                    <div class="testswitch">
+                        <input class="testswitch-checkbox" id="onoffswitch2" type="checkbox">
+                        <label class="testswitch-label" for="onoffswitch2">
+                            <span class="testswitch-inner" data-on="ON" data-off="OFF"></span>
+                            <span class="testswitch-switch"></span>
+                        </label>
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+
+    </div>
+
+    <div id="block">
+        <a id="blockButtonAnchor"><button type="button" id="blockButton">block</button></a>
+    </div>
+
+
+
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/block.js"></script>
+    <script type="text/javascript" src="js/replace.js"></script>
+    <script type="text/javascript" src="js/switch.js"></script>
+</body>
+</html>
