@@ -1,3 +1,7 @@
+center:hover {
+    color: #7788ff;
+}
+
 #table{
     font-size: 25px;
     border-collapse: collapse;
